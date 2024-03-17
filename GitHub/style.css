@@ -1,0 +1,289 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto";
+  /* background-color: rgba(255, 255, 255, 0.847); */
+}
+
+.h2text {
+  color: #242323;
+}
+.apiText {
+  margin-top: 10px;
+}
+
+/* Navbar Styling */
+
+.mainContainer {
+  margin-top: 0.2rem;
+  display: flex;
+}
+
+.navbar {
+  height: 59px;
+  width: 100%;
+  display: flex;
+
+  color: #050505;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+/* heading  */
+.page-heading {
+  cursor: default;
+  font-size: 1.5rem;
+}
+
+.icon {
+  font-size: 1.7rem;
+}
+
+/* Input Label Styling */
+#inputLabel {
+  font-size: 1.4rem;
+  letter-spacing: 0.2px;
+  padding: 3px;
+  font-weight: 550;
+  margin-left: 630px;
+}
+
+/* Username Input Styling */
+#inputUsername {
+  height: 2.3rem;
+  width: 20rem;
+  padding: 11.2px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  border-radius: 3px;
+  border-color: #0c0b0c;
+  background-color: #fff;
+  color: #1c1a1aca;
+}
+#inputUsername::placeholder {
+  border-color: #000;
+  color: #151315;
+  background-color: #fff;
+  font-weight: 200;
+}
+#inputUsername:focus {
+  outline: #000;
+}
+
+/* Clear Button Styling */
+.clear {
+  height: 2.37rem;
+  width: 5rem;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+  margin-left: 10px;
+}
+
+/* Search Button Styling */
+.search {
+  height: 2.37rem;
+  width: 5rem;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+  margin-left: 10px;
+}
+
+/* Button Effects */
+.clear:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+.search:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+/* tooltip text*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  min-width: 350px;
+  background-color: #050505db;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.4rem;
+  position: absolute;
+  z-index: 1;
+  left: 60%;
+  top: 100%;
+  margin-left: 60px;
+  font-family: "roboto";
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #292929 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+/* PROFILE IMAGE CONTENT STYLING */
+.profileImageContainer {
+  height: 255px;
+  /* background-color: red; */
+}
+
+.profileImageContent {
+  padding: 10px;
+}
+
+.profileImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+  object-position: center;
+}
+.profileName {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* INFORMATION CONTAINER */
+.informationContainer {
+  height: calc(100% - 309px);
+  width: 100%;
+}
+
+.informationContent {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.followersContainer {
+  height: 100px;
+  width: 220px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+}
+.idContainer {
+  height: 100px;
+  width: 220px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+}
+.followingContainer {
+  height: 100px;
+  width: 220px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+}
+.repoContainer {
+  height: 100px;
+  width: 220px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+}
+.gistContainer {
+  height: 100px;
+  width: 220px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+}
+.locationContainer {
+  height: 100px;
+  width: 220px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+}
+
+/* URL Container */
+.urlContainer {
+  padding: 0.2rem 2rem;
+  margin-top: 1.5rem;
+}
+.urlLinkContainer {
+  height: 50px;
+  width: 1400px;
+  display: flex;
+  padding: 0.5rem 0.4rem;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.urlLinkInfo {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.repositoryTimelineContainer {
+  padding: 0.2rem 2rem;
+}
+
+.timeLineContent {
+  display: flex;
+  gap: 1rem;
+  /* margin-top: 0rem; */
+}
+
+.createdContainer {
+  height: 50px;
+  width: 50%;
+  display: flex;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+}
+.createdInfo {
+  margin-left: 1rem;
+}
+.updatedContainer {
+  height: 50px;
+  width: 50%;
+  display: flex;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 0.4rem;
+}
+.updatedInfo {
+  margin-left: 1rem;
+}

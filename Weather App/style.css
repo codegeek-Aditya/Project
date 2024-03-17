@@ -1,0 +1,133 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+/* Global Style  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans";
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* document style  */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* weather-app  */
+.weather-app {
+  border:2px solid black;
+ border-radius: 20px;
+  height: 400px;
+  width: 550px;
+  background-color: #beb6b6da;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.city-input {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.city-name {
+  padding: 10px;
+  width: 22rem;
+  font-size: 22px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.search-btn,
+.clear-btn {
+  font-weight: 800;
+  border-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  width: 10rem;
+  margin: auto 5px;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.search-btn:hover, .clear-btn:hover {
+  background-color: #9d9898cc;
+}
+
+.city-info * {
+  font-size: 25px;
+  margin-left: 18px;
+  padding: 5px;
+}
+
+.city,
+.date,
+.temp {
+  display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  .heading {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+  .weather-app {
+    aspect-ratio: 1;
+    width: 250px;
+  }
+  .city-input {
+    display: block;
+    padding: 30px;
+  }
+  .city-name {
+    padding: 3px;
+    width: 10.2rem;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .search-btn,
+  .clear-btn {
+    display: block;
+    font-weight: 500;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 4px;
+    width: 10.1rem;
+    margin: 10px 1px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .city-info * {
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 2px;
+  }
+  .city,
+  .date,
+  .temp {
+    display: block;
+  }
+}

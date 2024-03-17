@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know Your GitHub</title>
+    <!-- CSS Link -->
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="navbar">
+        <h2 class="page-heading">
+          Know GitHub <i class="fa-brands fa-github icon"></i>
+        </h2>
+        <div class="inputField tooltip">
+          <label for="enterUsername" id="inputLabel">Username</label>
+          <input
+            id="inputUsername"
+            class="Usernameinput"
+            type="search"
+            name="enterUsername"
+            placeholder="Github Username"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Github Username'"
+          />
+          <!-- TOOLTIP TEXT -->
+          <span class="tooltiptext">
+            Usernames for user accounts on GitHub.com can only contain
+            alphanumeric characters and dashes ( - )</span
+          >
+        </div>
+        <div class="buttonContainer">
+          <button class="search">Search</button>
+          <button class="clear">Clear</button>
+        </div>
+      </div>
+    </div>
+    <div class="profileImageContainer">
+      <div class="profileImageContent">
+        <img src="" alt="" class="profileImage" />
+        <h2 class="profileName"></h2>
+      </div>
+    </div>
+    <div class="informationContainer">
+      <div class="informationContent">
+        <div class="idContainer">
+          <h2 class="idHeading">Id :</h2>
+          <h2 class="idCount h2text apiText"></h2>
+        </div>
+        <div class="followersContainer">
+          <h2 class="followerHeading">Followers :</h2>
+          <h2 class="followerCount h2text apiText"></h2>
+        </div>
+        <div class="followingContainer">
+          <h2 class="followingHeading">Following :</h2>
+          <h2 class="followingCount h2text apiText"></h2>
+        </div>
+        <div class="repoContainer">
+          <h2 class="repoHeading">Repositories :</h2>
+          <h2 class="repoCount h2text apiText"></h2>
+        </div>
+        <div class="gistContainer">
+          <h2 class="gistHeading">Gists :</h2>
+          <h2 class="gistCount h2text apiText"></h2>
+        </div>
+        <div class="locationContainer">
+          <h2 class="locationHeading">Location :</h2>
+          <h2 class="locationInfo h2text apiText"></h2>
+        </div>
+      </div>
+      <div class="repositoryTimelineContainer">
+        <div class="timeLineContent">
+          <div class="createdContainer">
+            <h2 class="createdHeading">Last Created :</h2>
+            <h2 class="createdInfo h2text"></h2>
+          </div>
+          <div class="updatedContainer">
+            <h2 class="updatedHeading">Last Updated :</h2>
+            <h2 class="updatedInfo h2text"></h2>
+          </div>
+        </div>
+      </div>
+      <div class="urlContainer">
+        <div class="urlContent">
+          <div class="urlLinkContainer">
+            <h2 class="urlHeading">GitHub Profile URL :</h2>
+            <a href="" class="urlLinkInfo h2text"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="./script.js"></script>
+  </body>
+</html>
